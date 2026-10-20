@@ -1,0 +1,43 @@
+@import '../echoes-variables';
+
+@import '../echoes-variables';
+
+.arctic {
+  --brand-primary: #ffffff;
+  --brand-secondary: #27272a;
+  --brand-success: #fafafa;
+  --brand-warning: #e4e4e7;
+  --brand-danger: #71717a;
+  --brand-info: #a1a1aa;
+
+  --sidebar-bg: #000000;
+  --sidebar-bg-secondary: #09090b;
+  --sidebar-text: #ffffff;
+  --sidebar-text-lighter: #a1a1aa;
+
+  --brand-inverse-text: #000000;
+  --brand-primary-lite-bg-color: #18181b;
+  --brand-primary-text-color: #fafafa;
+  --brand-dark-bg-color: #000000;
+  --brand-dark-bg-color-transparent: rgba(0, 0, 0, 0.85);
+  --brand-bg-lite-transparent: rgba(24, 24, 27, 0.9);
+
+  --link-primary-color: #ffffff;
+  --link-primary-hover-color: #e4e4e7;
+
+  --navbar-bg-color: rgba(9, 9, 11, 0.85);
+  --navbar-text-color: #fafafa;
+  --navbar-link-color: var(--link-primary-color);
+
+  --list-group-item-text: #fafafa;
+  --list-group-item-text-hover: #ffffff;
+  --list-group-item-bg: #141416;
+  --list-group-item-bg-hover: #202023;
+  --list-group-item-border: #27272a;
+
+  --player-controls-bar-bg: #111113;
+  --media-bg-primary: #141416;
+
+  --app-bg-color: #09090b;
+  --app-lite-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+}

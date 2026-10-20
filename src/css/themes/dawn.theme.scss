@@ -1,0 +1,36 @@
+.dawn {
+  --brand-primary: #09090b;
+  --brand-secondary: #f4f4f5;
+  --brand-success: #18181b;
+  --brand-warning: #3f3f46;
+  --brand-danger: #71717a;
+  --brand-info: #71717a;
+  --sidebar-bg: #ffffff;
+  --sidebar-bg-secondary: #f4f4f5;
+  --sidebar-text: #09090b;
+  --sidebar-text-lighter: #71717a;
+  --brand-inverse-text: #ffffff;
+  --brand-primary-lite-bg-color: #ffffff;
+  --brand-primary-text-color: #09090b;
+  --brand-dark-bg-color: #ffffff;
+  --brand-dark-bg-color-transparent: rgba(255, 255, 255, 0.95);
+  --brand-bg-lite-transparent: rgba(244, 244, 245, 0.95);
+  --link-primary-color: #09090b;
+  --link-primary-hover-color: #27272a;
+  --navbar-bg-color: rgba(255, 255, 255, 0.9);
+  --navbar-text-color: #09090b;
+  --navbar-link-color: var(--link-primary-color);
+  --list-group-item-text: #09090b;
+  --list-group-item-text-hover: #000000;
+  --list-group-item-bg: #ffffff;
+  --list-group-item-bg-hover: #f4f4f5;
+  --list-group-item-border: #e4e4e7;
+  --player-controls-bar-bg: #ffffff;
+  --media-bg-primary: #ffffff;
+  --app-bg-color: #fafafa;
+  --app-lite-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  .sign-in-with-youtube {
+    background-image: url('/assets/images/yt_logo_rgb_light.png') !important;
+  }
+}

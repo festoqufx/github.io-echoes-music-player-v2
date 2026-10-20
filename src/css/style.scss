@@ -1,0 +1,197 @@
+/* ===== Primary Styles ========================================================
+   Author: Oren Farhi, http://ferdinandestoque.com
+   ========================================================================== */
+/* Application */
+@import './echoes-variables';
+// @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import './bootstrap-custom';
+@import './core/global';
+@import './core/utils';
+@import './core/animations';
+@import './core/responsive';
+
+// $fa-font-path: '../fonts' !default;
+// @import '~font-awesome/scss/font-awesome';
+
+// Themes
+@import './app.variables';
+@import './themes/index.themes.scss';
+
+body,
+html {
+  height: 100%;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--app-bg-color);
+  color: var(--navbar-text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--app-bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+}
+
+iframe {
+  border: none;
+}
+
+/* Glassmorphism Navbar Topbar */
+.navbar.navbar-default,
+app-navbar .navbar {
+  background-color: var(--navbar-bg-color) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Glassmorphism & Modern Player Bar */
+.navbar-fixed-bottom,
+app-player {
+  background-color: var(--player-controls-bar-bg) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Media Cards Modern Styling */
+.youtube-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px !important;
+  overflow: hidden;
+  background: var(--list-group-item-bg) !important;
+  border: 1px solid var(--list-group-item-border) !important;
+  margin-bottom: 2rem !important;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+
+    .thumb-image {
+      transform: scale(1.05);
+    }
+  }
+
+  .thumbnail {
+    border-radius: 8px 8px 0 0 !important;
+    overflow: hidden;
+    
+    .thumb-image {
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .title {
+    font-weight: 600 !important;
+    font-size: 1.4rem !important;
+    letter-spacing: -0.01em;
+    color: var(--sidebar-text) !important;
+    height: 40px !important;
+    line-height: 1.3 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+/* Brand headphones icon red highlight */
+.brand-icon,
+.brand-icon.fa-headphones,
+i.brand-icon {
+  color: #ff2d55 !important;
+}
+
+/* Search input high contrast black text polish */
+.form-control,
+input[type="text"],
+input[type="search"] {
+  background-color: #ffffff !important;
+  border: 1px solid #d4d4d8 !important;
+  color: #000000 !important;
+  font-weight: 500 !important;
+  border-radius: 9999px !important;
+  padding: 0.8rem 1.5rem !important;
+  transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+
+  &::placeholder {
+    color: #3f3f46 !important;
+    opacity: 1 !important;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #3f3f46 !important;
+    opacity: 1 !important;
+  }
+
+  &::-moz-placeholder {
+    color: #3f3f46 !important;
+    opacity: 1 !important;
+  }
+
+  &:-ms-input-placeholder {
+    color: #3f3f46 !important;
+    opacity: 1 !important;
+  }
+
+  &:focus {
+    background-color: #ffffff !important;
+    border-color: #000000 !important;
+    color: #000000 !important;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+/* Sidebar Modern Polish */
+.sidebar {
+  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background-color: var(--sidebar-bg) !important;
+}
+
+// ngx-tooltip Style <START>
+tooltip-content .tooltip .tooltip-inner {
+  box-shadow: 0 0 20px -3px var(--brand-dark-bg-color);
+  padding: 1rem;
+  color: var(--brand-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+}
+
+// -list group item
+.list-group-item,
+button.list-group-item,
+a.list-group-item {
+  background-color: var(--list-group-item-bg);
+  border-color: var(--list-group-item-border);
+  color: var(--list-group-item-text);
+
+  &:hover {
+    background-color: var(--list-group-item-bg-hover);
+    color: var(--list-group-item-text-hover);
+  }
+}

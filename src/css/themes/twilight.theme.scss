@@ -1,0 +1,36 @@
+.twilight {
+  --brand-primary: #ffffff;
+  --brand-secondary: #18181b;
+  --brand-success: #ffffff;
+  --brand-warning: #d4d4d8;
+  --brand-danger: #71717a;
+  --brand-info: #a1a1aa;
+  --sidebar-bg: #000000;
+  --sidebar-bg-secondary: #0a0a0a;
+  --sidebar-text: #ffffff;
+  --sidebar-text-lighter: #a1a1aa;
+  --brand-inverse-text: #ffffff;
+  --brand-primary-lite-bg-color: #121212;
+  --brand-primary-text-color: #ffffff;
+  --brand-dark-bg-color: #000000;
+  --brand-dark-bg-color-transparent: rgba(0, 0, 0, 0.9);
+  --brand-bg-lite-transparent: rgba(18, 18, 18, 0.95);
+  --link-primary-color: #ffffff;
+  --link-primary-hover-color: #e4e4e7;
+  --navbar-bg-color: rgba(5, 5, 5, 0.9);
+  --navbar-text-color: #ffffff;
+  --navbar-link-color: var(--link-primary-color);
+  --list-group-item-text: #e4e4e7;
+  --list-group-item-text-hover: #ffffff;
+  --list-group-item-bg: #0f0f10;
+  --list-group-item-bg-hover: #1c1c1f;
+  --list-group-item-border: #27272a;
+  --player-controls-bar-bg: #080808;
+  --media-bg-primary: #0f0f10;
+  --app-bg-color: #000000;
+  --app-lite-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+
+  .sign-in-with-youtube {
+    background-image: url('/assets/images/yt_logo_rgb_dark.png') !important;
+  }
+}
